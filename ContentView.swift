@@ -56,7 +56,7 @@ struct ContentView: View {
         
         ZStack {
             if (playerWon && strikes == 0) {
-                Text("Wow! You are an Expert!")
+                Text("Wow! You are an EXPERT!")
                     .font(.title)
                     .offset(y:-50)
                     .foregroundColor( isShowingWin ? .green: .blue)
@@ -65,7 +65,7 @@ struct ContentView: View {
                     .animation(.easeInOut(duration: 2), value: isShowingWin)
                     .onAppear{self.isShowingWin = !isShowingWin}
             } else if (playerWon && strikes == 1) {
-                Text("Nice Work!")
+                Text("Nice! You are good at this!")
                     .font(.title)
                     .offset(y:-50)
                     .foregroundColor(.green)
@@ -188,7 +188,6 @@ struct ContentView: View {
         playerWon = false
         isShowingWin = false
         isShowingLose = false
-        isShowingTitle = false
         isShowingStrike = false
         
     }
