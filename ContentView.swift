@@ -45,7 +45,7 @@ struct ContentView: View {
             .offset(y:-70)
             .font(.title2)
             .foregroundColor(.red)
-            .opacity(isShowingStrike ? 1: 0)
+            .opacity(isShowingStrike ? 1.5: 0)
             .animation(Animation.linear(duration: 1.5).repeatForever(autoreverses: true),
                                value: isShowingStrike )
                     .onAppear {
@@ -129,7 +129,6 @@ struct ContentView: View {
                     .background(gameEnded ? Color.secondary: Color.blue)
                     .clipShape(Capsule())
             }.disabled(gameEnded)
-    
     
 
             Button(action: resetGame) {
