@@ -190,6 +190,7 @@ struct ContentView: View {
         isShowingWin = false
         isShowingLose = false
         isShowingTitle = false
+        isShowingStrike = false
         
     }
 }
